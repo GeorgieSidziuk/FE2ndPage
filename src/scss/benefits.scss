@@ -1,0 +1,77 @@
+
+
+
+.block-row__1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .block {
+      width: 360px;
+      border-radius: 18px;
+      margin: 0 10px;
+      transition: all 0.8s ease;
+      cursor: pointer;
+    //   не забывай в значении time-duration писать единицу измерения s,балда!
+    //   не 0.6, а 0.6s
+   &:hover{  
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      
+    }
+    .block-photo {
+         display: flex;
+         justify-content: center;
+       
+    }
+.block-text {
+    text-align: center;
+        margin-top: 40px;
+   .text__title {
+       text-transform: uppercase;
+       font-size: $fs24;
+       font-weight: $fw9;
+      
+    }
+    .text__description {
+        margin-top: 20px ;
+      font-size: $fs18 ;
+      font-weight: $fw4;
+    }
+}
+}
+}
+.block-row__2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 65px -15px 0px;
+    .block {
+      width: 360px;
+      margin: 0 10px;
+      border-radius: 18px;
+      transition: all 0.8s ease;
+      cursor: pointer;
+    //   не забывай в значении time-duration писать единицу измерения s,дубина!
+    //   не 0.6, а 0.6s
+   &:hover{  
+       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .block-photo {
+         display: flex;
+         justify-content: center;
+    }
+.block-text {
+    text-align: center;
+        margin-top: 40px;
+   .text__title {
+       text-transform: uppercase;
+       font-size: $fs24;
+       font-weight: $fw9;
+    }
+    .text__description {
+        margin-top: 20px ;
+       font-size: $fs18 ;
+       font-weight: $fw4;
+    }
+}
+}
+}

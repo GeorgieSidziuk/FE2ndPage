@@ -1,0 +1,25 @@
+
+@import "links.scss";
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap');
+
+html{
+  font-family: 'Raleway';
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  section {
+    padding: 100px 0;
+    .container {
+      max-width: 1170px;
+      margin: auto;
+      padding: 0 15px;
+    }
+  }
+
+}
+
+  
