@@ -168,6 +168,47 @@
   color: #1da1f2;
 }
 
+.downdload-row .download-text {
+  text-align: center;
+}
+.downdload-row .download-text .d-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.downdload-row .download-text .d-desc {
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.downdload-row .button {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.downdload-row .button .btn__link .btn {
+  width: 370px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #FF4343;
+  border: none;
+}
+.downdload-row .button .btn__link .btn:hover {
+  background-color: #E71414;
+}
+.downdload-row .button .btn__link .btn:active {
+  -webkit-box-shadow: 4px 4px 30px 0px #FF4343;
+          box-shadow: 4px 4px 30px 0px #FF4343;
+}
+
 html {
   font-family: "Raleway";
 }
