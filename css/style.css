@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css");
 .block-row__1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,8 +13,8 @@
   width: 360px;
   border-radius: 18px;
   margin: 0 10px;
-  -webkit-transition: all 0.8s ease;
-  transition: all 0.8s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
   cursor: pointer;
 }
 .block-row__1 .block:hover {
@@ -28,6 +28,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.block-row__1 .block .block-photo .b-icon {
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+}
+.block-row__1 .block .block-photo .b-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .block-row__1 .block .block-text {
   text-align: center;
@@ -74,6 +82,14 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
+.block-row__2 .block .block-photo .b-icon {
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.block-row__2 .block .block-photo .b-icon:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 .block-row__2 .block .block-text {
   text-align: center;
   margin-top: 40px;
@@ -87,6 +103,69 @@
   margin-top: 20px;
   font-size: 18px;
   font-weight: 400;
+}
+
+.person-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 15px 270px 15px 270px 15px 270px;
+  grid-template-columns: repeat(4, 270px);
+  grid-gap: 15px;
+}
+.person-row .person__card .person__avatar .ava {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.person-row .person__card .person__desc {
+  margin-top: 30px;
+}
+.person-row .person__card .person__desc .name {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 700;
+}
+.person-row .person__card .person__desc .position {
+  margin-top: 6px;
+  text-transform: uppercase;
+  color: #FF4343;
+  font-size: 18px;
+  font-weight: 400;
+}
+.person-row .person__card .person__desc .profile {
+  margin-top: 18px;
+  font-size: 18px;
+  color: #6C7279;
+  font-weight: 400;
+}
+.person-row .person__card .person__socials {
+  margin-top: 40px;
+}
+.person-row .person__card .person__socials .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.person-row .person__card .person__socials .social-list .list__item {
+  margin: 5px;
+  border: 1px solid #C6CBCD;
+  padding: 10px;
+  font-size: 18px;
+}
+.person-row .person__card .person__socials .social-list .list__item .item__link {
+  color: #C6CBCD;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.person-row .person__card .person__socials .social-list .list__item .item__link .icon {
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.person-row .person__card .person__socials .social-list .list__item .item__link .icon:hover {
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+  color: #1da1f2;
 }
 
 html {
