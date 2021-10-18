@@ -1,0 +1,72 @@
+.banner {
+    position: relative;
+    background-image: url('/img/bg/img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+
+        .container {
+            position: relative;
+            z-index: 3;
+                .banner-row {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                        .banner-text {
+                            text-align: center;
+                            color: $white;
+
+                                .title {
+                                    font-size: $fs64;
+                                    font-weight: $fw9;
+                                }
+                                .subtitle {
+                                    margin-top: 31px;
+                                    font-size: $fs24;
+                                    font-weight: $fw4;
+                                }
+                        }
+                        .banner-button {
+                            margin-top: 80px;
+
+                         .btn__link {
+                          }
+                        .btn {
+                            width: 370px;
+                            padding: 20px;
+                            cursor: pointer;
+                            font-size: $fs24;
+                            font-weight: $fw9;
+                            text-transform: uppercase;
+                            color: $white;
+                            background-color: $normalcolor;
+                            border: none;
+                            &:hover{
+                                background-color: $hovercolor;
+                                }
+                                &:active{
+                                    box-shadow: 4px 4px 30px 0px $activecolor;
+                                }
+                         }
+   
+}
+
+}
+
+}
+&::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $bgcolor;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+  
+}
