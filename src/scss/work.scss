@@ -1,0 +1,40 @@
+.work {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-column-gap: 0px;
+
+    .work-cell{
+        .work__link{
+            .work__img{
+                width: 370px;
+                height: 340px;
+                object-fit: cover;
+               &:hover{
+            //  background-color: $whover;
+            //     }
+            //  &:active{
+            //  background-color: $wactive;
+            //   }  
+
+            }
+            .work__name{
+                .work__title{
+
+                }
+                .work__subtitle{
+
+                }
+            }
+           
+        }
+         
+
+    }   
+               
+}
+    
+    
+
+
