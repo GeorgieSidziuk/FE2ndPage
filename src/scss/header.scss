@@ -1,80 +1,138 @@
-
 header{
-    background-color: $bgcolor;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    .container{
-        
-  .header-row{
-      padding: 36px;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      
-      .header-logo{ 
-        font-size: $fs30;
-        text-transform: uppercase;
-          
-        .h-logo__link{
-          color: $logocol;
-          font-weight: $fw7;
-          
-          
-           
-        } 
-        &::after{
-                content: 'box';
-                color: $white;
-                font-weight: 300;
-
-            }
-
-
-
-    }
-    .menu{
-       
-        .menu-list{
-            display: flex;
-            justify-content: space-around;
+   position: relative;
+   background-image: url('/img/bg/img.png');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   z-index: index 1;
+  
+  
+.container{
+    position: relative;
+    z-index: 3;
+    .header-row{
+        padding: 36px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        .header-logo__left{
+            padding: 0 15px;
+            font-size: 32px;
             text-transform: uppercase;
-            color: $white;
-           
-            
-            
-           
-            .list__item{
-                margin-right: 25px;
-
-               .nav__link{
-                 color: $white; 
-                 font-size: $fs13;
-                 font-weight: $fw7;
-
-                  &:hover{
-                    padding-bottom: 40px;
-                    border-bottom: 3px solid $bordercol;
-                }
-                 &:active{
-                    color: $activecolor;
-                    border-bottom:  3px solid $activecolor;
-                   
-                  
-                }
-                }
+            span{
+                font-weight: 800;
+                color: $logocol;
+            }
+            &::after{
+                content: "box";
+                color: $white;
+                font-weight: 200;
                 
-            
                
             }
 
         }
+        .nav-menu__right{
+             padding: 0 15px;
+        
+            .menu-list{
+               
+                display: flex;
+                flex-direction: row;
+               
+                .list__item{
+                     margin-right: 24px;
+                    
+                    .item__link{
+                        font-size: $fs13;
+                        font-weight: $fw7;
+                        color: $white;
+                        text-transform: uppercase;
+                        &:hover{
+                        border-bottom:3px solid #BABBC5 ;
+                        padding-bottom: 39px;
+                        }
+                         &:active{
+                            padding-bottom: 39px;
+                            border-bottom:3px solid $hovercolor;
+                            color: $hovercolor;
+                            
+                        }
+                      } 
+                     &:last-child{
+                         margin-right: 0;
+                     }
+                    }
+                   
+            }
+        }
 
     }
-  }
-    
+    .banner{
+        width: 1170px;
+        margin: auto;
+        padding: 120px 0px;
+        border-top: 1px solid $bordercol ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        
+        .banner-text{
+           color: $white;
+           margin-bottom: 82px;
+            .title{
+               
+                font-size: $fs64;
+                font-weight: $fw9;
+                text-transform: uppercase;
 
-}
-}
+            }
+            .subtitle{
+                margin-top: 32px;
+                font-size: $fs24;
+                font-weight: $fw4 ;
 
+            }
+        }
+        .banner-link{
+                width: 370px;
+                padding: 30px;
+                background-color: $normalcolor;
+                cursor: pointer;
+            .findout{
+               
+                color: $white;
+                font-size: $fs24;
+                font-weight: $fw9;
+                text-transform: uppercase;
+               
+            }
+          &:hover{
+                    background-color: $hovercolor;
+                }
+                &:active{
+                    box-shadow: 4px 4px 30px 0px #FF4343;
+                    
+                }  
+        }
+            
+        
+
+    }
+}
     
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $bgcolor;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+    }
+}

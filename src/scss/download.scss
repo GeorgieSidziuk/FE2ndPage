@@ -1,49 +1,40 @@
 .downdload-row {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
 .download-text {
     text-align: center;
-   
-    
-
+   margin-bottom: 50px;
     .d-title {
         font-size: $fs30;
         font-weight: $fw5;
 }
     .d-desc {
-        margin-top: 5px;
+        margin-top: 6px;
         font-size: $fs18;
         font-weight: $fw7;
         text-transform: uppercase;
    }
 }
-.button {
-    
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-
-    .btn__link{
-        .btn{
-            width: 370px;
-            padding: 20px;
-            cursor: pointer;
-            font-size: $fs24;
-            font-weight: $fw9;
-            text-transform: uppercase;
-            color: $white;
-            background-color: $normalcolor;
-            border: none;
-            &:hover{
-            background-color: $hovercolor;
-            }
-            &:active{
-                box-shadow: 4px 4px 30px 0px $activecolor;
-            }
-        }
-        
-
-        }
-         
+.download-link{
    
+    width: 370px;
+    padding: 30px;
+    background-color: $normalcolor;  
+    cursor: pointer;
+    color: $white; 
+    font-size: $fs24;
+    font-weight: $fw9;
+    text-transform: uppercase;
+  .download{   
+    
+      span{
+     
+
+      }
+  }
 }
 
 }
